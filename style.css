@@ -617,6 +617,25 @@ body {
   flex-grow: 1;
 }
 
+/* GitHub link cards */
+.project-card--link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card--link .project-card__external {
+  display: inline-block;
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: color var(--duration-fast);
+}
+
+.project-card--link:hover .project-card__external {
+  color: var(--color-accent-hover);
+}
+
 /* ============================================
    SKILLS — Tag brutalist style
    ============================================ */
