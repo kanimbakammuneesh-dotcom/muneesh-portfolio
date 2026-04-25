@@ -1,91 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muneesh Kanimbakam | Software Engineer</title>
     <meta name="description" content="Portfolio of Muneesh Kanimbakam, Software Development Engineer specializing in AI and multi-agent systems.">
-    <!-- Google Sans Flex isn't widely available on Google Fonts public API, using nearest alternatives or Roboto if it fails, but adding an import for a similar modern sans-serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-animated" id="bg-animated">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">MK.</div>
+            <div class="logo">Muneesh<span class="highlight">.</span></div>
             <div class="nav-links">
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
             </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main id="main-content">
         <!-- Hero Section -->
-        <section id="hero" class="container section hero">
-            <h1 class="hero-title">Muneesh Kanimbakam</h1>
-            <h2 class="hero-subtitle">Software Development Engineer <span class="highlight">@ Lumen Technologies</span></h2>
-            <p class="hero-desc">Results-driven engineer specializing in Java, Python, AI-powered automation, and multi-agent systems. Recognized with Mass Market All-Star Award (2x) for developing innovative tools that significantly reduced SLA resolution time.</p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="mailto:kanimbakammuneesh@gmail.com" class="btn btn-secondary">Contact Me</a>
+        <section id="hero" class="container section hero animate-on-scroll">
+            <div class="hero-content">
+                <div class="badge-pill mb-4">Software Development Engineer</div>
+                <h1 class="hero-title">Engineering <span class="highlight-gradient">Intelligent</span><br>Systems at Scale.</h1>
+                <h2 class="hero-subtitle">Software Development Engineer @ Lumen Technologies</h2>
+                <p class="hero-desc">Specializing in Java, Python, AI-powered automation, and multi-agent systems. Recognized with Mass Market All-Star Award (2x) for developing innovative tools that significantly reduced SLA resolution time.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary glow-effect">View Projects</a>
+                    <a href="mailto:kanimbakammuneesh@gmail.com" class="btn btn-secondary">Get in touch</a>
+                </div>
             </div>
         </section>
 
         <!-- Experience Section -->
         <section id="experience" class="container section">
-            <h2 class="section-title">Experience</h2>
-            <div class="card experience-card">
-                <div class="card-header">
-                    <h3>Software Development Engineer</h3>
-                    <span class="badge">Nov 2023 – Present</span>
+            <h2 class="section-title animate-on-scroll">Experience</h2>
+            <div class="timeline animate-on-scroll delay-1">
+                <div class="card glass-card experience-card">
+                    <div class="card-header">
+                        <div>
+                            <h3>Software Development Engineer</h3>
+                            <h4 class="company">Lumen Technologies | Bengaluru, India</h4>
+                        </div>
+                        <span class="badge">Nov 2023 – Present</span>
+                    </div>
+                    <ul class="bullet-list">
+                        <li>Developed Splunk MCP Agent for autonomous log checking using Model Context Protocol, reducing incident investigation time by 90%.</li>
+                        <li>Built Incident AI Suite for ServiceNow with auto-assignment and auto-triage, driving near-zero latency and 99.9% SLA adherence.</li>
+                        <li>Created Incident Resolution Helper using RAG to recommend fixes, cutting MTTR by 40%.</li>
+                        <li>Developed Ban Lookup and BMP Lookup applications with AI-powered data mismatch detection.</li>
+                        <li>Created Sensitive Info Detection Tool scanning 150,000+ files to ensure security compliance.</li>
+                    </ul>
                 </div>
-                <h4 class="company">Lumen Technologies | Bengaluru, India</h4>
-                <ul class="bullet-list">
-                    <li>Developed Splunk MCP Agent for autonomous log checking using Model Context Protocol, reducing incident investigation time by 90%.</li>
-                    <li>Built Incident AI Suite for ServiceNow with auto-assignment and auto-triage, driving near-zero latency and 99.9% SLA adherence.</li>
-                    <li>Created Incident Resolution Helper using RAG to recommend fixes, cutting MTTR by 40%.</li>
-                    <li>Developed Ban Lookup and BMP Lookup applications with AI-powered data mismatch detection.</li>
-                    <li>Created Sensitive Info Detection Tool scanning 150,000+ files to ensure security compliance.</li>
-                </ul>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="container section">
-            <h2 class="section-title">Key Projects</h2>
+            <h2 class="section-title animate-on-scroll">Key Projects</h2>
             <div class="grid">
-                <div class="card">
-                    <h3>Splunk MCP Agent</h3>
-                    <p class="tech-stack">CrewAI, AutoGen, FastMCP, Python, FastAPI, Splunk SDK, RAG</p>
-                    <p>Architected an intelligent multi-agent system using Microsoft Autogen Framework. Engineered an MCP server with 11 registered tools for Splunk operations.</p>
+                <div class="card glass-card project-card animate-on-scroll">
+                    <div class="card-content">
+                        <h3>Splunk MCP Agent</h3>
+                        <p class="tech-stack">CrewAI, AutoGen, FastMCP, Python, FastAPI, Splunk SDK, RAG</p>
+                        <p>Architected an intelligent multi-agent system using Microsoft Autogen Framework. Engineered an MCP server with 11 registered tools for Splunk operations.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Incident AI Suite</h3>
-                    <p class="tech-stack">ServiceNow, Python, NLP, RAG, AI/ML</p>
-                    <p>Designed and implemented an AI Suite to automate ServiceNow incident management workflows, achieving 50% reduction in SLA breaches.</p>
+                <div class="card glass-card project-card animate-on-scroll delay-1">
+                    <div class="card-content">
+                        <h3>Incident AI Suite</h3>
+                        <p class="tech-stack">ServiceNow, Python, NLP, RAG, AI/ML</p>
+                        <p>Designed and implemented an AI Suite to automate ServiceNow incident management workflows, achieving 50% reduction in SLA breaches.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Data Lookup Tools</h3>
-                    <p class="tech-stack">Python, Streamlit, Oracle SQL, MongoDB, AI/ML</p>
-                    <p>Designed intuitive lookup applications for Oracle and MongoDB databases featuring AI-powered data inconsistency detection.</p>
+                <div class="card glass-card project-card animate-on-scroll delay-2">
+                    <div class="card-content">
+                        <h3>Data Lookup Tools</h3>
+                        <p class="tech-stack">Python, Streamlit, Oracle SQL, MongoDB, AI/ML</p>
+                        <p>Designed intuitive lookup applications for Oracle and MongoDB databases featuring AI-powered data inconsistency detection.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Sensitive Info Detection</h3>
-                    <p class="tech-stack">Shell Scripting, Python, Power Automate, AI</p>
-                    <p>Architected automated security scanning tool capable of analyzing codebases to identify exposed credentials and internal info.</p>
+                <div class="card glass-card project-card animate-on-scroll">
+                    <div class="card-content">
+                        <h3>Sensitive Info Detection</h3>
+                        <p class="tech-stack">Shell Scripting, Python, Power Automate, AI</p>
+                        <p>Architected automated security scanning tool capable of analyzing codebases to identify exposed credentials and internal info.</p>
+                    </div>
+                </div>
+                <div class="card glass-card project-card animate-on-scroll delay-1">
+                    <div class="card-content">
+                        <h3>Plant Leaf Disease Detection</h3>
+                        <p class="tech-stack">Python, CNN, Machine Learning, Image Processing</p>
+                        <p>Developed ML model using CNNs to predict plant leaf diseases. Implemented image processing techniques and published research article.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
         <section id="skills" class="container section">
-            <h2 class="section-title">Skills & Certifications</h2>
+            <h2 class="section-title animate-on-scroll">Skills & Expertise</h2>
             <div class="skills-container">
-                <div class="skills-category">
+                <div class="skills-category glass-card animate-on-scroll">
                     <h3>Programming & Frameworks</h3>
                     <div class="tags">
                         <span class="tag">Python</span>
@@ -94,27 +124,30 @@
                         <span class="tag">FastAPI</span>
                         <span class="tag">Streamlit</span>
                         <span class="tag">REST API</span>
-                        <span class="tag">React/Vue</span>
+                        <span class="tag">PL/SQL</span>
+                        <span class="tag">Shell Scripting</span>
                     </div>
                 </div>
-                <div class="skills-category">
+                <div class="skills-category glass-card animate-on-scroll delay-1">
                     <h3>AI/ML & Cloud</h3>
                     <div class="tags">
                         <span class="tag">AutoGen</span>
                         <span class="tag">RAG</span>
                         <span class="tag">MCP</span>
+                        <span class="tag">LLM Integration</span>
+                        <span class="tag">NLP</span>
                         <span class="tag">AWS</span>
                         <span class="tag">GCP</span>
                         <span class="tag">Docker</span>
-                        <span class="tag">CI/CD</span>
                     </div>
                 </div>
-                <div class="skills-category">
+                <div class="skills-category glass-card animate-on-scroll delay-2">
                     <h3>Certifications</h3>
-                    <ul class="bullet-list">
+                    <ul class="bullet-list cert-list">
                         <li>Google Cloud Certified - Associate Cloud Engineer</li>
-                        <li>AWS Certified Machine Learning Specialty (Educate)</li>
+                        <li>AWS Certified Machine Learning Specialty</li>
                         <li>AWS Educate Introduction to Generative AI</li>
+                        <li>Machine Learning Deep Racer (AWS)</li>
                     </ul>
                 </div>
             </div>
@@ -122,14 +155,19 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <h2>Muneesh Kanimbakam</h2>
-            <p>Tirupati, Andhra Pradesh - 517644</p>
-            <div class="footer-links">
-                <a href="mailto:kanimbakammuneesh@gmail.com">kanimbakammuneesh@gmail.com</a>
-                <a href="https://www.linkedin.com/in/muneeshkanimbakam-476958258" target="_blank">LinkedIn</a>
-                <a href="tel:+919182547563">+91 9182547563</a>
+        <div class="container footer-content animate-on-scroll">
+            <div class="footer-brand">
+                <h2>Muneesh Kanimbakam</h2>
+                <p>Building Intelligent Automation</p>
             </div>
+            <div class="footer-links">
+                <a href="mailto:kanimbakammuneesh@gmail.com" class="social-link">Email</a>
+                <a href="https://www.linkedin.com/in/muneeshkanimbakam-476958258" target="_blank" class="social-link">LinkedIn</a>
+                <a href="tel:+919182547563" class="social-link">Call</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Muneesh Kanimbakam. Designed with Antigravity UI.</p>
         </div>
     </footer>
     <script src="script.js"></script>

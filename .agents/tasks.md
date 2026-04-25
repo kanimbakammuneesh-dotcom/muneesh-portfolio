@@ -2,7 +2,7 @@
 skill: task-breakdown
 version: 1
 date: 2026-04-25
-status: draft
+status: done
 ---
 
 ## Shared Context
